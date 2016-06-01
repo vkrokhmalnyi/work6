@@ -8,6 +8,15 @@ b = c;
 }
 return b;
 }
-var n
-n = prompt('type n' ,n); 
-alert( fib(n) );// JavaScript File
+var n;
+
+
+window.addEventListener("load", init, false);
+function init () {  
+test.addEventListener("click", action, true);
+}
+
+function action(){
+    n = prompt('type n' ,n);
+    alert(fib(n));
+}
